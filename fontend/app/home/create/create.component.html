@@ -1,0 +1,46 @@
+<app-content>
+    <br><br><br><br> <br><br><br>
+    
+      <form [formGroup]="form" (submit) = "onSubmit()">
+        <div class="row">
+          <label for="">รหัสประชาชน</label>
+          <input type="text" class="form-control"
+          formControlName="proCardId" >
+        </div>
+        <div class="row">
+       
+            <label for="">ชื่อ</label>
+            <input type="text" class="form-control" 
+            formControlName="proName">
+          </div>
+          <div class="row">
+       
+              <label for="">นามสกุล</label>
+              <input type="ntext" class="form-control" 
+              formControlName="proLastname">
+            </div>
+            <div class="row">
+       
+                <label for="">อีเมลล์</label>
+                <input type="text" class="form-control" 
+                formControlName="proEmail">
+              </div>
+              
+                <div class="row">
+                    <label for="">เบอร์โทรศัพท์</label>
+                    <input type="text" class="form-control"
+                    formControlName="proTel" >
+                  </div>
+                  <div class="row">
+                      <label for="">สถานศึกษา</label>
+                      <input type="text" class="form-control"
+                      formControlName="proStudy" >
+                    </div>
+                    <br>
+            <br>
+            <div class="row">
+                <button type="submit" class="btn btn-success">บันทึก</button>
+            </div>
+      </form>
+  </app-content>
+   

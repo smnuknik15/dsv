@@ -1,0 +1,45 @@
+<app-content>
+    <br> <br> <br> <br> <br> <br> 
+                <div>
+                  <br>
+                <div>
+              <div class="pull-right">
+                      <button type="button" class="btn btn-success" (click)="gotoCreateProfile()">เพิ่มข้อมูล</button>
+              </div>
+              <br> <br>
+                </div>
+                <br>
+                  <table class="table">
+                      <thead class="bg-warning">
+                        <tr>
+                            <th scope="col">หมายเลขบัตรประชาชน</th>
+                          <th scope="col">ชื่อ</th>
+                          <th scope="col">นามสกุล</th>
+                          <th scope="col">เบอร์โทรศัพท์</th>
+                           <th scope="col">อีเมลล์</th>
+                          <th scope="col">สถานที่ศึกษา</th>
+                          <th scope="col">
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr *ngFor="let item of item">
+                            <td class="table-warning" >{{item.proCardId}}</td>
+                          <td class="table-warning" >{{item.proName}}</td>
+                          <td class="table-warning">{{item.proLastname}}</td>
+                          <td class="table-warning">{{item.proTel}}</td>
+                          <td class="table-warning">{{item.proEmail}}</td>
+                          <td class="table-warning">{{item.proStudy}}</td>
+                          <td class="table-warning">
+                            <!--<div class="btn-group" role="group" aria-label="Basic example">
+                              <button class="btn btn-info" [routerLink]="['/home/edit',item.personID]">แก้ไข</button>
+                                <button type="button" (click)="onDeleteData(item.personID)" class="btn btn-danger">ลบ</button>
+                                <button type="button" (click)="onDeleteData(item.personID)" class="btn btn-danger">BMI</button>
+                              </div>-->
+                        </td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+              </div>
+           
+</app-content>
